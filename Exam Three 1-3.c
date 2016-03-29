@@ -73,7 +73,7 @@ char userChoice = 'Q';
             }
         }
 
-        printf("\n\n Array in the ascending order is: \n");
+        printf("\n\n Scores in the ascending order is: \n");
         for(i=0;i<(sizeof score[i]);i++)
         {
                printf("\n %i",score[i]);
