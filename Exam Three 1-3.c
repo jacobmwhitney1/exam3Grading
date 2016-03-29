@@ -7,7 +7,6 @@
 #define FLUSH fflush(stdin)
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 // PROTYPE MY FUNCTIONS HERE
 
