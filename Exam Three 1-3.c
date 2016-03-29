@@ -10,7 +10,6 @@
 #include <time.h>
 
 // PROTYPE MY FUNCTIONS HERE
-int changeIt(int a[], int c);
 
 void main(){
 
