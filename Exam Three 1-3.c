@@ -1,3 +1,5 @@
+// Code broken, only let me input 4 scores. No Function yet.
+//***********************************************************
 #define _CRT_SECURE_NO_WARNINGS
 #define SIZE 10000
 #define PAUSE system("pause")
