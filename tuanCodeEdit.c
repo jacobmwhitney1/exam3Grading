@@ -3,7 +3,6 @@
 *
 *
 */
-
 #define _CRT_SECURE_NO_WARNINGS
 #define SIZE 10000
 #define PAUSE system("pause")
@@ -14,7 +13,7 @@
 
 // PROTYPE MY FUNCTIONS HERE
 int getScore(int array[], int counter);
-void displayAverage(int counter);
+void displayAverage(int counter, float avg);
 float calcAverage(int array[], int counter);
 void displayAscending(int array[], int counter, char message[]);
 char doTheSwitch(int array[], int index);
@@ -24,6 +23,7 @@ float calcAscending(int array[], int counter);
 main(){
 	int array[SIZE];
 	int counter = 0;
+	float avg = 0;
 	char message;
 	char userChoice = 'Q';
 	// Display menu
@@ -45,7 +45,7 @@ main(){
 
         case 'B':
         CLS; // clear the screen
-       	displayAverage(counter);
+       	displayAverage(counter, avg);
         break;
 
         case 'C':
@@ -91,8 +91,7 @@ float calcAverage(int array[], int counter) {
 	return result;
 } // end calcAverage
 
-void displayAverage(int counter) {
-    float avg;
+void displayAverage(int counter, float avg) {
 
 	if (counter == 0) // check if there is no input score
 		printf("Please enter a score first.\n\n");
