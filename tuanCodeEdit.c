@@ -50,7 +50,7 @@ main(){
 
         case 'C':
         CLS; // clear the screen
-        displayAscending(array, counter, message);
+        displayAscending(array, counter, "THE ASCENDING SCORE LIST");
         break;
 
         case 'Q':
@@ -100,9 +100,8 @@ void displayAverage(int counter, float avg) {
 		printf("The average score is %.2f\n\n", avg); // display average score
 } // end displayAverage
 
-float calcAscending(int array[], int counter){
-
-  int i, bottom;
+void displayAscending(int array[], int counter, char message[]) {
+  int i,bottom;
   char switchMade;
 
   bottom = counter - 1;
@@ -116,17 +115,9 @@ float calcAscending(int array[], int counter){
      bottom--;
    }while(switchMade == 'Y');
 
-  displayAscending(array, counter,  "THE SORTED LIST");
-
-  PAUSE;
-
-} // end calcAscending
-
-void displayAscending(int a[], int counter, char message[]) {
-     int i;
      printf("%s: \n", message);
      for (i=0; i < counter; i++)
-     printf("Element %2i = %2i.\n", i+1, a[i]);
+     printf("%2i. = %2i.\n", i+1, array[i]);
      printf("\n");
 } // end of displayAscending
 
