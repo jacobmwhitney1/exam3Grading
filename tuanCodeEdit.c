@@ -86,7 +86,7 @@ float calcAverage(int array[], int counter) {
 	for (i = 0; i < counter; i++)
 	{
 		sum += array[i]; //get sum
-		avg = sum / array[i]; // get average
+		avg = sum / counter; // get average
 	}
 	return result;
 } // end calcAverage
