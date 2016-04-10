@@ -115,10 +115,14 @@ void displayAscending(int array[], int counter, char message[]) {
      bottom--;
    }while(switchMade == 'Y');
 
+	if (counter == 0) // check if there is no input score
+		printf("Please enter a score first.\n\n");
+		else{
      printf("%s: \n", message);
      for (i=0; i < counter; i++)
      printf("%2i. = %2i.\n", i+1, array[i]);
      printf("\n");
+		}
 } // end of displayAscending
 
 char doTheSwitch(int array[], int i) {
@@ -129,3 +133,4 @@ char doTheSwitch(int array[], int i) {
     array[i+1]= temp;
     return result;
 } // end function doTheSwitch
+
