@@ -13,8 +13,7 @@
 
 // PROTYPE MY FUNCTIONS HERE
 int getScore(int array[], int counter);
-void displayAverage(int counter, float avg);
-float calcAverage(int array[], int counter);
+void displayAverage(int array[], int counter);
 void displayAscending(int array[], int counter, char message[]);
 char doTheSwitch(int array[], int index);
 float calcAscending(int array[], int counter);
@@ -45,7 +44,7 @@ main(){
 
         case 'B':
         CLS; // clear the screen
-       	displayAverage(counter, avg);
+       	displayAverage(array, counter);
         break;
 
         case 'C':
@@ -78,26 +77,22 @@ int getScore(int array[], int counter) {
 	return result;
 } // end getScore
 
-float calcAverage(int array[], int counter) {
+
+void displayAverage(int array[], int counter) {
+
     int i = 0;
     float sum = 0;
 	float avg = 0;
-	float result = 0;
+		if (counter == 0) // check if there is no input score
+		printf("Please enter a score first.\n\n");
+		else{
 	for (i = 0; i < counter; i++)
 	{
 		sum += array[i]; //get sum
 		avg = sum / counter; // get average
 	}
-	return result;
-} // end calcAverage
-
-void displayAverage(int counter, float avg) {
-
-	if (counter == 0) // check if there is no input score
-		printf("Please enter a score first.\n\n");
-
-	else
 		printf("The average score is %.2f\n\n", avg); // display average score
+		}
 } // end displayAverage
 
 void displayAscending(int array[], int counter, char message[]) {
