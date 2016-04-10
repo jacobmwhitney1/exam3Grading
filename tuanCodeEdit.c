@@ -39,7 +39,7 @@ main(){
 
         switch (userChoice){
         case 'A':
-        getScore(array, counter);
+        counter = getScore(array, counter);
         break;
 
         case 'B':
@@ -70,10 +70,9 @@ PAUSE; // pause the program
 } // end main
 
 int getScore(int array[], int counter) {
-	int result = 0;
+	int result = counter + 1;
 	printf("Enter a score: \n"); // get input
     scanf("%i", &array[counter]);
-    counter++;
 	return result;
 } // end getScore
 
@@ -128,4 +127,3 @@ char doTheSwitch(int array[], int i) {
     array[i+1]= temp;
     return result;
 } // end function doTheSwitch
-
