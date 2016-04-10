@@ -167,7 +167,7 @@ void sortArrayHighLow(int a[], int c) {
 		} // end for
 		bottom--;
 	} while (switchMade == 'Y');
-} // end sortArray
+} // end sortArrayHighLow
 void sortArrayLowHigh(int a[], int c) {
 	int i, bottom;
 	char switchMade;
@@ -180,4 +180,4 @@ void sortArrayLowHigh(int a[], int c) {
 		} // end for
 		bottom--;
 	} while (switchMade == 'Y');
-} // end sortArray
+} // end sortArrayLowHigh
