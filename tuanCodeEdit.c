@@ -110,7 +110,7 @@ float calcAscending(int array[], int counter){
   do {
      switchMade = 'N';
      for(i=0; i < bottom; i++) {
-        if(array[i] > array[i+1])
+        if(array[i] < array[i+1])
            switchMade = doTheSwitch(array, i);
      } // end for
      bottom--;
