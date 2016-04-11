@@ -3,21 +3,21 @@ Written by..: Jacob W, Tuan D, Collin J, Jason J
 Date written: Mar 23 2016
 Purpose: Exam 3 Grading
 *************************************************/
-#define _CRT_SECURE_NO_WARNINGS
-#define PAUSE system("pause")
-#define CLS system("cls")
-#include <stdio.h>
-#include <stdlib.h>
+#define _CRT_SECURE_NO_WARNINGS // removes precompiler secure warnings for functions like scanf
+#define PAUSE system("pause") // constant to allow pause of program
+#define CLS system("cls") // constant to clear screen of previous outputs
+#include <stdio.h> // standard library header for basic inputs and outputs
+#include <stdlib.h> // standard library header for memory allocation, process control, and conversions
 
 // ******************Prototype Functions***********************
-void adjustDown(int array[], int counter); //requirement 6
-void adjustUp(int array[], int counter);//req 5
-float average(int array[], int counter);
-void displayMenu(); //menu requirement
-void displayAllNumbered(int array[], int count);//req 4
-void displaySort(int a[], int c); // req 3
-char doTheSwitch(int a[], int c); // req 3
-int numAppeared(int array[], int targetNumber, int count); //used in req 4
+void adjustDown(int array[], int counter); // req 6: adjuts all values of array down by 5
+void adjustUp(int array[], int counter);// req 5: adjusts all values of array up by 2
+float average(int array[], int counter);// req 2: calculates value for average of all array values inputted
+void displayMenu(); // menu req: prints menu and contains switch case
+void displayAllNumbered(int array[], int count);//req 4: 
+void displaySort(int a[], int c); // req 3:
+char doTheSwitch(int a[], int c); // req 3: switches two values of array for a sort
+int numAppeared(int array[], int targetNumber, int count); // req 4
 void sortArrayHighLow(int a[], int index); // req 3
 void sortArrayLowHigh(int a[], int index); // req 3
 
